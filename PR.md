@@ -17,3 +17,10 @@ E de seguida importei para o contêiner
 ```bash
 sudo docker exec contratosgov mongoimport -d contratos -c contratos /tmp/contratos2024.json --jsonArray
 ``` 
+
+Para correr o programa deverá ser usado o 
+``` 
+npm i 
+npm start 
+``` 
+
