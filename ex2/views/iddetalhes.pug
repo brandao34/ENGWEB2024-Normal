@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Detalhes do Registro
+    link(rel="stylesheet", href="https://www.w3schools.com/w3css/4/w3.css")
+  body
+    .w3-container.w3-padding-16(style="background-color: teal;")
+      h1.w3-center(style="color: white;") Detalhes do Registro
+      table.w3-table-all(style="background-color: white;")
+        tbody
+          tr
+            th(style="background-color: teal; color: white;") ID Contrato
+            td= registro._id
+          tr
+            th(style="background-color: teal; color: white;") Objecto do Contrato
+            td= registro.objectoContrato
+          tr
+            th(style="background-color: teal; color: white;") Data de Celebração
+            td= registro.dataCelebracaoContrato
+          tr
+            th(style="background-color: teal; color: white;") Preço Contratual
+            td= registro.precoContratual
+          tr
+            th(style="background-color: teal; color: white;") NIPC Entidade Comunicante
+            td= registro.NIPC_entidade_comunicante
+          tr
+            th(style="background-color: teal; color: white;") Entidade Comunicante
+            td= registro.entidade_comunicante
+    .w3-container.w3-padding-16.w3-center
+      a.w3-button(href="/") Voltar à Lista de Contratos
